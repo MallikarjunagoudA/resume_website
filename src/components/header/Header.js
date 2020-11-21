@@ -20,8 +20,8 @@ class Header extends Component {
     console.log(theme);
     const link = settings.isSplash ? "/splash" : "home";
     return (
-      <Fade top duration={1000} distance="20px">
-        <div>
+      <Fade top duration={1000} distance="20px" >
+        <div  >
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
               <span style={{ color: theme.text }}> &lt;</span>
@@ -34,7 +34,7 @@ class Header extends Component {
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
-            <ul className="menu" style={{ backgroundColor: theme.body }}>
+            <ul className="menu" style={{ backgroundColor:"#c0c0c0" }}>
               <li>
                 <NavLink
                   to="/home"
